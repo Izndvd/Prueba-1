@@ -13,3 +13,24 @@ body {
     bottom: 0;
     width: 100%;
 }
+.btn-primary {
+    background-color: #ea154e;;
+    border-color: rgb(0, 0, 0); /* Cambia el color del borde si es necesario */
+}
+.logo{
+    
+    width: 75px;
+    max-width: 100%;
+    border: 2px solid black;
+}
+.nav-link{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bold;
+    font-size: 20px;
+}
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
