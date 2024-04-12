@@ -62,3 +62,10 @@ body {
     height: 2px; /* Ajusta el grosor del subrayado */
     background-color: #453831; /* Ajusta el color del subrayado */
 }
+
+.containerbackground{
+    background-color: #a8958c;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
