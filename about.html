@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonorus Aurum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+<!--navbar-->
+<nav class="navbar navbar-expand-sm navbar-dark bg-black">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="../Prueba-1/home.html">
+          <img class= "logo" src="../Prueba-1/imgs/loggg.png" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../Prueba-1/home.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Acerca de</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <button class="btn btn-primary me-2" type="button">Iniciar sesión</button>
+            </form>
+            <!-- Botón del carrito de compras -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cartModal">
+                <img src="../Prueba-1/imgs/carrrrr.png" alt="Carrito" width="30px">
+            </button>
+            
+        </div>
+    </div>
+</nav>
+
+<!-- Ventana modal para el carrito de compras -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Carrito de Compras</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Contenido del carrito de compras -->
+                <section class="vh-100" style="background-color: #bfbfbf;">
+                    <div class="container h-100">
+                        <div class="row d-flex justify-content-center align-items-center h-100">
+                            <div class="col">
+                                <p><span class="h2">Carrito de compras </span><span class="h4">(1 item en el carro)</span></p>
+                
+                                <div class="card mb-4">
+                                    <div class="card-body p-4">
+                
+                                        <div class="row align-items-center">
+                                            <div class="col-md-2">
+                                                <img src="../Prueba-1/imgs/scxar.jpeg"
+                                                    class="img-fluid" alt="Generic placeholder image">
+                                            </div>
+                                            <div class="col-md-2 d-flex justify-content-center">
+                                                <div>
+                                                    <p class="small text-muted mb-4 pb-2">Producto</p>
+                                                    <p class="lead fw-normal mb-0">Scaring The Hoes</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 d-flex justify-content-center">
+                                                <div>
+                                                    <p class="small text-muted mb-4 pb-2">Tipo</p>
+                                                    <p class="lead fw-normal mb-0"><i class="fas fa-circle me-2" style="color: #dadada;"></i>
+                                                        CD</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 d-flex justify-content-center">
+                                                <div>
+                                                    <p class="small text-muted mb-4 pb-2">Cantidad</p>
+                                                    <p class="lead fw-normal mb-0">1</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 d-flex justify-content-center">
+                                                <div>
+                                                    <p class="small text-muted mb-4 pb-2">Precio</p>
+                                                    <p class="lead fw-normal mb-0">$24.990</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 d-flex justify-content-center">
+                                                <div>
+                                                    <p class="small text-muted mb-4 pb-2">Total</p>
+                                                    <p class="lead fw-normal mb-0">$24.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                    </div>
+                                </div>
+                
+                                <div class="card mb-5">
+                                    <div class="card-body p-4">
+                
+                                        <div class="float-end">
+                                            <p class="mb-0 me-5 d-flex align-items-center">
+                                                <span class="small text-muted me-2">Precio total:</span> <span
+                                                    class="lead fw-normal">$24.990</span>
+                                            </p>
+                                        </div>
+                
+                                    </div>
+                                </div>
+                
+                                <div class="d-flex justify-content-end">
+                                    <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-light btn-lg me-2">Seguir comprando</button>
+                                    <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg">Agregar al carrito</button>
+                                </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Pagar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<!--cierre navbar-->
