@@ -138,31 +138,43 @@
 <br>
 <!--cierre navbar-->
 
-<!--inicio login-->
+<!--INICIO SIGNUP-->
 <div class="container d-flex justify-content-center align-items-center flex-grow-1">
-    <form id="inicioSesion" style="max-width: 300px;">
+    <form id="registro" style="max-width: 300px;">
         <div class="mb-3">
-            <label for="correoEjemplo" class="form-label">Correo electrónico</label>
-            <input type="email" class="form-control" id="correoEjemplo" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre">
         </div>
         <div class="mb-3">
-            <label for="ejemploContra" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="ejemploContra">
+            <label for="apellido">Apellido</label>
+            <input type="text" class="form-control" id="apellido" name="apellido">
+        </div>
+        <div class="mb-3">
+            <label for="fechaNacimiento">Fecha de Nacimiento</label>
+            <input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento">
+        </div>
+        <div class="mb-3">
+            <label for="correo">Correo Electrónico</label>
+            <input type="email" class="form-control" id="correo" name="correo" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+        </div>
+        <div class="mb-3">
+            <label for="contrasena">Contraseña</label>
+            <input type="password" class="form-control" id="contrasena" name="contrasena">
         </div>
         <div class="mb-3 form-check">
             <input type="checkbox" class="form-check-input" id="verificador">
             <label class="form-check-label" for="verificador">Verificado</label>
+            
         </div>
         <div>
-            <p>¿Sin cuenta? <a href="signup.html" id="registro">Regístrate</a></p>    
-            <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+            <p>¿Ya tienes una cuenta? <a href="login.html" id="inicioSesion">Iniciar Sesión</a></p>
+            <button type="submit" class="btn btn-primary">Registrarse</button>
         </div>
-        <br>
     </form>
 </div>
-
-<!--cierre login-->
+<!--CIERRE SIGNUP-->
+</body>
 <!--INICIO DE FOOTER-->
 <div id="page-content">
     <!-- Contenido de la página -->
@@ -173,5 +185,4 @@
     </div>
 </footer>
 <!--CIERRE DE FOOTER-->
-</body>
 </html>
