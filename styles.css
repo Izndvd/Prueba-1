@@ -1,41 +1,46 @@
-html,
-body {
+html, body {
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 #page-content {
-    flex: 1 0 auto;
+    flex: 1;
 }
 
 #sticky-footer {
     flex-shrink: 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
 }
+
 .btn-primary {
     background-color: #4ca44c;
-    border-color: rgb(0, 0, 0); /* Cambia el color del borde si es necesario */
+    border-color: #000; /* Cambia el color del borde si es necesario */
 }
-.logo{
-    
+
+.logo {
     width: 75px;
     max-width: 100%;
     border: 2px solid black;
 }
-.nav-link{
+
+.nav-link {
     color: white;
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 20px;
 }
+
 .navbar-brand {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
 
-#detalle{
+#detalle {
     font-size: 15px;
 }
 
@@ -62,22 +67,76 @@ body {
     background-color: #453831; /* Ajusta el color del subrayado */
 }
 
-.containerbackground{
+.containerbackground {
     background-color: #a8958c;
     padding: 20px;
     border-radius: 5px;
     margin-top: 20px;
 }
 
-.containercardcarousel{
+.containercardcarousel {
     background-color: #a8958c;
     padding: 20px;
     border-radius: 5px;
     margin-top: 20px;
 }
 
+/* Estilo para las cards */
+@media (max-width: 767.98px) {
+    .border-sm-start-none {
+        border-left: none !important;
+    }
+}
 
-/* Estilo para las cards*/
-@media (max-width: 767.98px) { .border-sm-start-none { border-left: none !important; } }
+.container-py-5{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-body {
+    flex-grow: 1;
+    overflow: hidden;
+    max-height: 300px; /* Establece una altura máxima para las tarjetas */
+}
+
+
+
+/* Ajuste del tamaño de las imágenes del carrusel */
+.carousel-item img {
+    max-width: 100%; /* Ajustar al 100% del contenedor */
+    max-height: 400px; /* Altura máxima de 400px */
+    object-fit: contain; /* Contener la imagen dentro del contenedor sin deformarla */
+    margin: 0 auto;
+}
+
+/* Flechas del carrusel más pequeñas y estéticas */
+.carousel-control-prev, .carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.carousel-control-prev {
+    left: 330px; /* Ajusta la posición horizontal de la flecha izquierda */
+}
+
+.carousel-control-next {
+    right: 330px; /* Ajusta la posición horizontal de la flecha derecha */
+}
 
 
